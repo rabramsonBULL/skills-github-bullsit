@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dive Bars by BullSh*t Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">Dive Bars by BullSh*t Tours</a>
+            <div class="nav-links">
+                <a href="/episodes">Episodes</a>
+                <a href="/about">About Us</a>
+                <a href="/map">Bar Map</a>
+                <a href="/merch">Merch</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="/" class="nav-logo">Dive Bars by BullSh*t Tours</a>
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-links">
+            <a href="/episodes">Episodes</a>
+            <a href="/about">About Us</a>
+            <a href="/map">Bar Map</a>
+            <a href="/merch">Merch</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dive Bars by BullSh*t Tours</h1>
+            <p class="subtitle">Exploring the Soul of the City, One Classy Dive at a Time</p>
+            <p class="quote">"We're here for the stories, the spirits, and the slightly questionable decisions. Join us."</p>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="featured">
+        <div class="container">
+            <h2>Latest Episode</h2>
+            <div class="featured-video">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PLACEHOLDER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hosts Section -->
+    <section class="hosts">
+        <div class="container">
+            <h2>Meet Your Hosts</h2>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <img src="https://placehold.co/400x400/1C1C1C/FF4E42?text=Steve" alt="Steve" class="host-image">
+                    <h3>Steve</h3>
+                    <p>The seasoned sipper with a story for every stool. He's the guy who knows the bartender's name...and probably how to fix the jukebox.</p>
+                </div>
+                <div class="host-card">
+                    <img src="https://placehold.co/400x400/1C1C1C/FF4E42?text=Edwin" alt="Edwin" class="host-image">
+                    <h3>Edwin</h3>
+                    <p>Unearthing the historical charm in every dimly lit corner. He's the one who reads the plaque on the wall and knows the year the bar opened.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Bars Section -->
+    <section class="featured">
+        <div class="container">
+            <h2>Featured Dive Bars</h2>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <img src="https://placehold.co/800x600/1C1C1C/FF4E42?text=The+Blue+Room" alt="The Blue Room">
+                    <div class="featured-content">
+                        <h3>The Blue Room Revisited</h3>
+                        <p>Does this Burbank classic still shine? Steve orders a classic, Edwin orders...something historical.</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="https://placehold.co/800x600/1C1C1C/FF4E42?text=The+Last+Call" alt="The Last Call">
+                    <div class="featured-content">
+                        <h3>The Last Call</h3>
+                        <p>A hidden gem in downtown, where the jukebox plays vinyl and the regulars know your name.</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="https://placehold.co/800x600/1C1C1C/FF4E42?text=The+Golden+Hour" alt="The Golden Hour">
+                    <div class="featured-content">
+                        <h3>The Golden Hour</h3>
+                        <p>Where time stands still and the drinks are always perfect. A true neighborhood institution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Become a Regular</h2>
+            <p>Join the BullSh*t Tour Crew. Get exclusive bar recommendations and behind-the-scenes stories.</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dive Bars by BullSh*t Tours. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileMenuClose = document.querySelector('.mobile-menu-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    </script>
+</body>
+</html> 
